@@ -125,6 +125,7 @@ namespace Hl7.Cql.Fhir
             add((M.UnsignedInt ui) => ui.ToString());
 
             add((M.Canonical c) => c.ToString());
+            add((M.Code c) => c.Value);
 
             addParametersToCqlPrimitivesConverters(toTypes);
             return converter;
